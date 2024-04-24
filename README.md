@@ -1,8 +1,8 @@
 mayhaps
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/maybe.svg)](https://github.com/orgrinrt/maybe/stargazers) 
-![Crates.io Total Downloads](https://img.shields.io/crates/d/maybe)
-[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/maybe/issues) 
+![Crates.io Total Downloads](https://img.shields.io/crates/d/mayhaps)
+[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/maybe.svg)](https://github.com/orgrinrt/maybe/issues) 
 [![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/maybe) 
 
 Convenience macros for those uncertain times.
