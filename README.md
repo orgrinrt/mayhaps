@@ -1,9 +1,9 @@
 mayhaps
 ============
-[![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/maybe.svg)](https://github.com/orgrinrt/maybe/stargazers) 
+[![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/stargazers) 
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/mayhaps)
-[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/maybe.svg)](https://github.com/orgrinrt/maybe/issues) 
-[![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/maybe) 
+[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/issues) 
+[![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/mayhaps) 
 
 Convenience macros for those uncertain times.
 
@@ -23,6 +23,6 @@ TODO
 ---
 
 ## License
->You can check out the full license [here](https://github.com/orgrinrt/maybe/blob/master/LICENSE)
+>You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/master/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.
