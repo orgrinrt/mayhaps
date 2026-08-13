@@ -1,7 +1,6 @@
 mayhaps
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/stargazers) 
-![Crates.io Total Downloads](https://img.shields.io/crates/d/mayhaps)
 [![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/issues) 
 [![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/mayhaps) 
 
