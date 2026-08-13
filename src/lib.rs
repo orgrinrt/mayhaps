@@ -8,10 +8,10 @@ macro_rules! maybe {
             if let Some($name) = [< maybe_ $name >] $body
         }
     };
-    ($name:ident from ($opt_var:expr) exists { $($body:tt)* } else $else_body:block) => {
+    ($name:ident from ($opt_var:expr) exists $body:block else $else_body:block) => {
         $crate::__mayhaps_paste! {
             let [< maybe_ $name >] = $opt_var;
-            if let Some($name) = [< maybe_ $name >] $body $else_body
+            if let Some($name) = [< maybe_ $name >] $body else $else_body
         }
     };
 }

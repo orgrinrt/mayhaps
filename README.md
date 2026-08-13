@@ -28,7 +28,18 @@ maybe!(val from (opt) exists {
 });
 ```
 
-The source also contains an `else` variant of `maybe!`, but it does not currently compile; only the form above is usable.
+An `else` variant runs a second block when the `Option` is empty:
+
+```rust
+use mayhaps::maybe;
+
+let opt: Option<i32> = None;
+maybe!(val from (opt) exists {
+    println!("got {}", val);
+} else {
+    println!("nothing there"); // runs when opt is None
+});
+```
 
 ---
 
