@@ -18,11 +18,22 @@ Whether you use this project, have learned something from it, or just like it, p
 
 ## Usage
 
-TODO
+The crate exports one macro, `maybe!`. It runs a block when an `Option` holds a value, binding the unwrapped value to the given name:
+
+```rust
+use mayhaps::maybe;
+
+let opt = Some(5);
+maybe!(val from (opt) exists {
+    println!("got {}", val); // runs only when opt is Some
+});
+```
+
+The source also contains an `else` variant of `maybe!`, but it does not currently compile; only the form above is usable.
 
 ---
 
 ## License
->You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/master/LICENSE)
+>You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/main/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.
