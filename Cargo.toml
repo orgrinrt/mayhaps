@@ -4,6 +4,8 @@ authors = ["orgrinrt", "Hiisi Digital"]
 version = "0.1.0"
 edition = "2021"
 description = "Convenience macros for those uncertain times"
+license = "MIT"
+repository = "https://github.com/orgrinrt/mayhaps"
 
 [dependencies]
 paste = "1.0.14"
