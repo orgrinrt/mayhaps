@@ -1,7 +1,6 @@
 mayhaps
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/stargazers) 
-![Crates.io Total Downloads](https://img.shields.io/crates/d/mayhaps)
 [![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/issues) 
 [![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/mayhaps) 
 
@@ -18,11 +17,33 @@ Whether you use this project, have learned something from it, or just like it, p
 
 ## Usage
 
-TODO
+The crate exports one macro, `maybe!`. It runs a block when an `Option` holds a value, binding the unwrapped value to the given name:
+
+```rust
+use mayhaps::maybe;
+
+let opt = Some(5);
+maybe!(val from (opt) exists {
+    println!("got {}", val); // runs only when opt is Some
+});
+```
+
+An `else` variant runs a second block when the `Option` is empty:
+
+```rust
+use mayhaps::maybe;
+
+let opt: Option<i32> = None;
+maybe!(val from (opt) exists {
+    println!("got {}", val);
+} else {
+    println!("nothing there"); // runs when opt is None
+});
+```
 
 ---
 
 ## License
->You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/master/LICENSE)
+>You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/main/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.
