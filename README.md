@@ -41,6 +41,45 @@ maybe!(val from (opt) exists {
 });
 ```
 
+The bound name is yours and cannot collide with anything: the intermediate binding the
+macro introduces carries the macro's own hygiene, so `maybe!(held from (opt) exists {..})`
+works even where `held` is also the caller's variable and also what the macro calls its
+own. `tests/hygiene.rs` uses the same word for all three at once.
+
+---
+
+## Features
+
+Neither changes what the crate does, because there is nothing here to change: it is
+`macro_rules!` and nothing else, and what it expands into is a `let` and an `if let`.
+
+| Feature | Effect |
+|---|---|
+| `no_std` | Adds `#![no_std]`. |
+| `no_alloc` | Implies `no_std`. States what is already true. |
+
+They exist so a consumer whose workspace turns them on everywhere can name them, and so
+the claim is checked rather than believed. `tests/feature_matrix.rs` builds under each
+selection, and compiles a `#![no_std]` consumer crate against it to confirm the macro
+still expands there, with a control confirming that consumer really is without `std`.
+
+The crate has no dependencies. `paste` was the only one, and it was there to build a
+uniquely-named intermediate binding that macro hygiene already guarantees.
+
+---
+
+## Examples
+
+```text
+cargo run --example both_arms
+cargo run --example config_lookup
+```
+
+The first is each form in each state, four cases. The second reads a configuration where
+half the keys are missing, which is where the `else` form earns its keep: the fallback is a
+block, so it can compute a default from another setting rather than only supply a constant.
+Both are run by `cargo test`, in `tests/examples_run.rs`, which checks what they print.
+
 ---
 
 ## License

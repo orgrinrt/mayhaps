@@ -19,7 +19,9 @@ fn plain_form_skips_when_absent() {
 #[test]
 fn else_form_takes_the_present_branch() {
     let opt = Some(3u8);
-    let mut which = "";
+    // Uninitialised on purpose: both arms assign, so this compiling at all is the
+    // compiler proving the expansion has no path that assigns neither.
+    let which;
     maybe!(v from (opt) exists { let _ = v; which = "present"; } else { which = "absent"; });
     assert_eq!(which, "present");
 }
@@ -27,7 +29,9 @@ fn else_form_takes_the_present_branch() {
 #[test]
 fn else_form_takes_the_absent_branch() {
     let opt: Option<u8> = None;
-    let mut which = "";
+    // Uninitialised on purpose: both arms assign, so this compiling at all is the
+    // compiler proving the expansion has no path that assigns neither.
+    let which;
     maybe!(v from (opt) exists { let _ = v; which = "present"; } else { which = "absent"; });
     assert_eq!(which, "absent");
 }
