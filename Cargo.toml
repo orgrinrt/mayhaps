@@ -7,5 +7,15 @@ description = "Convenience macros for those uncertain times"
 license = "MPL-2.0"
 repository = "https://github.com/orgrinrt/mayhaps"
 
+# None. `paste` was here to build a uniquely-named intermediate binding, which macro
+# hygiene already guarantees; `tests/hygiene.rs` is that check.
 [dependencies]
-paste = "1.0.14"
+
+[features]
+# Neither changes what this crate does, because there is nothing here to change: it is
+# `macro_rules!` and nothing else, and what it expands into is a `let` and an `if let`.
+# They exist so a consumer whose workspace turns them on everywhere can name them, and so
+# the claim is checked by `tests/feature_matrix.rs` rather than believed.
+default = []
+no_std = []
+no_alloc = ["no_std"]
