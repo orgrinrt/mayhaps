@@ -1,19 +1,16 @@
-mayhaps
-============
-[![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/stargazers) 
-[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/issues) 
-[![Current Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/orgrinrt/mayhaps) 
+# `mayhaps`
 
-Convenience macros for those uncertain times.
+<div align="center" style="text-align: center;">
 
----
-## Buy me a coffee
+[![GitHub Stars](https://img.shields.io/github/stars/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/stargazers)
+[![Crates.io](https://img.shields.io/crates/v/mayhaps)](https://crates.io/crates/mayhaps)
+[![docs.rs](https://img.shields.io/docsrs/mayhaps)](https://docs.rs/mayhaps)
+[![GitHub Issues](https://img.shields.io/github/issues/orgrinrt/mayhaps.svg)](https://github.com/orgrinrt/mayhaps/issues)
+![License](https://img.shields.io/github/license/orgrinrt/mayhaps?color=%23009689)
 
-Whether you use this project, have learned something from it, or just like it, please consider supporting it by buying me a coffee, so I can dedicate more time on open-source projects like this :)
+> Convenience macros for those uncertain times.
 
-<a href="https://buymeacoffee.com/orgrinrt" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
----
+</div>
 
 ## Usage
 
@@ -80,9 +77,16 @@ half the keys are missing, which is where the `else` form earns its keep: the fa
 block, so it can compute a default from another setting rather than only supply a constant.
 Both are run by `cargo test`, in `tests/examples_run.rs`, which checks what they print.
 
----
+## Support
+
+Whether you use this project, have learned something from it, or just like it, please consider supporting it by buying me a coffee, so I can dedicate more time on open-source projects like this :)
+
+<a href="https://buymeacoffee.com/orgrinrt" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ## License
->You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/main/LICENSE)
 
-This project is licensed under the terms of the **MPL-2.0** license.
+> The project is licensed under the **Mozilla Public License 2.0**.
+
+`SPDX-License-Identifier: MPL-2.0`
+
+> You can check out the full license [here](https://github.com/orgrinrt/mayhaps/blob/dev/LICENSE)
