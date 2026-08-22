@@ -1,11 +1,14 @@
 [package]
 name = "mayhaps"
-authors = ["orgrinrt", "Hiisi Digital"]
 version = "0.1.0"
 edition = "2021"
 description = "Convenience macros for those uncertain times"
 license = "MPL-2.0"
 repository = "https://github.com/orgrinrt/mayhaps"
+readme = "README.md"
+keywords = ["macro", "option", "no_std", "unwrap", "conditional"]
+exclude = [".idea/", "target/"]
+categories = ["rust-patterns", "no-std", "development-tools"]
 
 # None. `paste` was here to build a uniquely-named intermediate binding, which macro
 # hygiene already guarantees; `tests/hygiene.rs` is that check.
