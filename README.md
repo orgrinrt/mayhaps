@@ -12,6 +12,22 @@
 
 </div>
 
+## Installation
+
+Not published yet, so this does not resolve. It is the command once a release
+lands.
+
+```bash
+cargo add mayhaps
+```
+
+Or in `Cargo.toml`:
+
+```toml
+[dependencies]
+mayhaps = "0.1"
+```
+
 ## Usage
 
 The crate exports one macro, `maybe!`. It runs a block when an `Option` holds a value, binding the unwrapped value to the given name:
